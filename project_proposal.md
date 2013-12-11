@@ -4,7 +4,7 @@
 QuickPoll seeks to allow non-profits and NGO's operating in SMS only markets a way to collect data from their customers in a meanigful way and give them insight into their business, operations, and customer needs.
 
 ##Data Models
-####Diagram
+####ERD Diagram
 ![ERD](http://i.imgur.com/sqrhzy0.jpg)
 
 ####Organization
@@ -54,8 +54,6 @@ QuickPoll seeks to allow non-profits and NGO's operating in SMS only markets a w
 
 ##User Stories
 
-[Pivotal Tracker](https://www.pivotaltracker.com/s/projects/974052)
-
 ####Organizations
 * As an organization I want to create a new campaign so that I can find out how my customers feel about something.
 * As an organization I want to add pollee's to an existing campaign so that I can get their input.
@@ -83,6 +81,8 @@ QuickPoll seeks to allow non-profits and NGO's operating in SMS only markets a w
 * Devise
 * Twillio
 
+##Links
 
-
+[GitHub](https://github.com/nicholalexander/SMallpollS)
+[Pivotal Tracker](https://www.pivotaltracker.com/s/projects/974052)
 
