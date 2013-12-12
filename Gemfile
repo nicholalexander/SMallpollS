@@ -38,9 +38,12 @@ group :development, :test do
   gem 'rspec-rails'
   gem 'pry-rails'
   gem 'factory_girl_rails'
+  gem 'ffaker'
+
 end
 
 group :test do
+  gem 'shoulda-matchers'
   gem 'capybara'
   gem 'selenium-webdriver'
   gem 'launchy'
