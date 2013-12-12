@@ -1,7 +1,8 @@
 Smallpolls::Application.routes.draw do
   
-  resources :campaigns
+  resources :organizations do
+    resources :campaigns
+  end
 
-  resources :organizations
 
 end
