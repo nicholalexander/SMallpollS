@@ -40,6 +40,8 @@ group :development, :test do
   gem 'pry-debugger'
   gem 'factory_girl_rails'
   gem 'ffaker'
+  gem 'better_errors'
+  gem 'binding_of_caller'
 
 end
 
