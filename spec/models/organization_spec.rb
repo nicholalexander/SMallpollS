@@ -1,7 +1,5 @@
 require 'spec_helper'
 
 describe Organization do
-
-  it {should have_many(:campaigns)}
-
+  pending "add some examples to (or delete) #{__FILE__}"
 end
