@@ -12,6 +12,9 @@ describe "an org's campaigns", js: true do
   let(:organization) { FactoryGirl.create(:organization) }
 
   it "can create one and return to the builder page in case my computer crashes" do
+
+    binding.pry
+
     visit new_organization_campaign_path(organization)
 
     fill_in :name, with: "Toilet Poll"
