@@ -1,5 +1,9 @@
-require 'spec_helper'
+require_relative '../spec_helper.rb'
 
-describe Organization do
-  pending "add some examples to (or delete) #{__FILE__}"
+# describe Organization do
+#   subject(:organization) { Organization.new }
+
+#   describe "validations" do
+#     it { should validate_presence_of(:name) }
+#   end
 end
