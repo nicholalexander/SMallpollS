@@ -30,10 +30,13 @@ describe CampaignsController do
   # CampaignsController. Be sure to keep this updated too.
   let(:valid_session) { {} }
 
+  let(:organization) { FactoryGirl.create(:organization) }
+
   describe "GET index" do
     it "assigns all campaigns as @campaigns" do
       campaign = Campaign.create! valid_attributes
-      get :index, {}, valid_session
+      #get :index, {}, valid_session
+      get :index, :organization_id => @organization.id
       assigns(:campaigns).should eq([campaign])
     end
   end

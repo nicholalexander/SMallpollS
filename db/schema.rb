@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20131212221337) do
+ActiveRecord::Schema.define(version: 20131213164537) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -21,6 +21,7 @@ ActiveRecord::Schema.define(version: 20131212221337) do
     t.string   "description"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.integer  "organization_id"
   end
 
   create_table "organizations", force: true do |t|
@@ -29,5 +30,7 @@ ActiveRecord::Schema.define(version: 20131212221337) do
     t.datetime "created_at"
     t.datetime "updated_at"
   end
+
+  add_foreign_key "campaigns", "organizations", name: "fk_campaigns_organizations"
 
 end
