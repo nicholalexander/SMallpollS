@@ -1,1 +1,7 @@
-You're on the new page!
+Lets create a new campaign!
+
+<%= form_for(@campaign) do |f| %>
+    <%= f.text_field :name %>
+    <%= f.text_field :description %>
+    <%= f.submit "Create" %>
+<% end %>
