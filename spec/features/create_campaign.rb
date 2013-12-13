@@ -13,12 +13,10 @@ describe "an org's campaigns", js: true do
 
   it "can create one and return to the builder page in case my computer crashes" do
 
-    binding.pry
-
     visit new_organization_campaign_path(organization)
 
-    fill_in :name, with: "Toilet Poll"
-    fill_in :description, with: "Survey of Kenyan toilet enjoyment."
+    fill_in :campaign_name, with: "Toilet Poll"
+    fill_in :campaign_description, with: "Survey of Kenyan toilet enjoyment."
 
     click_button "Create"
 

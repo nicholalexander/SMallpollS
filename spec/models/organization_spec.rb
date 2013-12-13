@@ -5,7 +5,8 @@ describe Organization do
   it "can be created" do
     org = Organization.new
 
-    expect(org).to not_be(nil)
+    it { should be_kind_of(Organization)}
+
   end
 
 end
