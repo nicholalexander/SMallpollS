@@ -6,22 +6,28 @@
 
 
 require "spec_helper"
-
+#require 'pry'
 
 describe "an org's campaigns", js: true do
   let(:organization) { FactoryGirl.create(:organization) }
 
   it "can create one and return to the builder page in case my computer crashes" do
+
     visit new_organization_campaign_path(organization)
 
-    fill_in :name, with: "Toilet Poll"
-    fill_in :description, with: "Survey of Kenyan toilet enjoyment."
+    fill_in :campaign_name, with: "Toilet Poll"
+    fill_in :campaign_description, with: "Survey of Kenyan toilet enjoyment."
 
     click_button "Create"
 
     created_campaign = Campaign.last
+    
 
-    visit edit_campaign_path(created_campaign)
+    visit organization_campaign_path(organization, created_campaign)
+    #visit edit_organization_campaign_path(organization, created_campaign)
+
+    #visit edit_campaign_path(created_campaign)
+    #binding.pry 
 
     expect(page).to have_content "Toilet Poll"
   end
