@@ -22,7 +22,7 @@ describe "an org's campaigns", js: true do
 
     created_campaign = Campaign.last
 
-    visit edit_campaign_path(created_campaign)
+    visit edit_organization_campaign_path(organization, created_campaign)
 
     expect(page).to have_content "Toilet Poll"
   end
