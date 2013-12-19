@@ -37,8 +37,11 @@ group :development, :test do
   gem 'jasmine', github: 'pivotal/jasmine-gem'
   gem 'rspec-rails'
   gem 'pry-rails'
+  gem 'pry-debugger'
   gem 'factory_girl_rails'
   gem 'ffaker'
+  gem 'better_errors'
+  gem 'binding_of_caller'
 
 end
 
